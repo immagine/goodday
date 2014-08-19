@@ -1,0 +1,68 @@
+<resources>
+
+    <string name="app_name">Shitday</string>
+    
+    <string name="shit_label">SHIT</string>
+    <string name="not_shit_label">OKAY</string>
+    <string name="undefined_label">NOT SET</string>
+    
+    <string name="loading">Loading..</string>
+    <string name="saving">Saving..</string>
+
+    <string name="ask_text">It is time to rate this day!\nWas this a shit day or not?</string>
+    <string name="shitday_button">Shit day</string>
+    <string name="notshitday_button">Not a shit day</string>
+    
+    <string name="shitday_saved">Day saved</string>
+    
+    <string name="settings_text">At what time would you like to rate the day?\n(it must be between MIN_ANSWERABLE_HOUR:00 and 23:59)</string>
+    <string name="save_settings_button">Save preferences</string>
+    <string name="settings_saved">Settings saved</string>
+    
+    <string name="quick_stats_text">Some quick statistics:</string>
+    <string name="go_to_list_button">See all rated days</string>
+    <string name="go_to_settings_button">Settings</string>
+    <string name="go_to_about_button">About</string>
+    
+    <string name="last7days">Last 7 days: </string>
+    <string name="last30days">Last 30 days: </string>
+    
+    <string name="pick_another_time">Pick another time</string>
+    <string name="pick_another_time_text">You must live the day before rating it, so choose a time between MIN_ANSWERABLE_HOUR:00 and 23:59</string>
+    
+    <string name="confirm_shitday">Confirm</string>
+    <string name="confirm_shitday_text">Please confirm that this was a shit day</string>
+    
+    <string name="confirm_not_shitday">Confirm</string>
+    <string name="confirm_not_shitday_text">Please confirm that this was not a shit day</string>
+    
+    <string name="previous_month">Previous</string>
+    <string name="next_month">Next</string>
+    
+    <string name="month_prompt">Choose a month</string>
+    
+    <string name="apply_filters">OK</string>
+    
+	<string-array name="months_array">
+		<item>January</item>
+		<item>Feburary</item>
+		<item>March</item>
+		<item>April</item>
+		<item>May</item>
+		<item>June</item>
+		<item>July</item>
+		<item>August</item>
+		<item>September</item>
+		<item>October</item>
+		<item>November</item>
+		<item>December</item>
+	</string-array>
+	
+	<string name="about_memo">\"Shitday\" for Android\nby Germán Vicencio L.\nwww.manger.cl\n\nLogo by Juan Manuel Arzola\nwww.juanma.cl\n\nTrack how shitty is your life by answering a simple question every night. If you get too many shit days, maybe its time to do some changes in your life.</string>
+	
+	<string name="save_day">Save</string>
+	<string name="cancel_day_update">Cancel</string>
+	
+	<string name="cant_edit_future">You can\'t know a priori if this day will be a shitday or not!</string>
+
+</resources>

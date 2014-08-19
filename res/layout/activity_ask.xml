@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="cl.manger.android.shitday.activities.AskActivity" >
+    
+	<ImageView
+		android:id="@+id/imageView_shitDayLogo"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="@drawable/logo"
+		android:layout_centerHorizontal="true"
+		android:contentDescription="" />
+    
+    <TextView
+        android:id="@+id/textView_askText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/ask_text"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/imageView_shitDayLogo" />
+    
+    <LinearLayout
+		android:id="@+id/linearLayout_ShitDayOrNot"
+	    android:layout_width="match_parent" 
+    	android:layout_height="wrap_content"
+    	android:layout_below="@id/textView_askText">
+
+		<Button android:id="@+id/button_shitDay"
+	        android:layout_width="0dp"
+	        android:layout_weight="0.50"
+	        android:layout_height="fill_parent"
+	        android:text="@string/shitday_button" />
+		
+		<Button android:id="@+id/button_notShitDay"
+	        android:layout_width="0dp"
+	        android:layout_weight="0.50"
+	        android:layout_height="fill_parent"
+	        android:text="@string/notshitday_button" />
+	
+	</LinearLayout>
+
+	
+</RelativeLayout>

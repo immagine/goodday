@@ -1,0 +1,68 @@
+<resources>
+
+    <string name="app_name">Shitday</string>
+    
+    <string name="shit_label">MIERDA</string>
+    <string name="not_shit_label">OKAY</string>
+    <string name="undefined_label">NO DEFINIDO</string>
+    
+    <string name="loading">Cargando..</string>
+    <string name="saving">Guardando..</string>
+
+    <string name="ask_text">¡Es hora de clasificar este día!\n¿Fue un día de mierda?</string>
+    <string name="shitday_button">Día de mierda</string>
+    <string name="notshitday_button">Día.</string>
+    
+    <string name="shitday_saved">Día guardado</string>
+    
+    <string name="settings_text">¿A qué hora quieres clasificar el día?\n(debe ser entre las MIN_ANSWERABLE_HOUR:00 y 23:59 hrs)</string>
+    <string name="save_settings_button">Guardar preferencias</string>
+    <string name="settings_saved">Preferencias guardadas</string>
+    
+    <string name="quick_stats_text">Algunas estadísticas:</string>
+    <string name="go_to_list_button">Ver los días</string>
+    <string name="go_to_settings_button">Configuración</string>
+    <string name="go_to_about_button">Acerca</string>
+    
+    <string name="last7days">Últimos 7 días: </string>
+    <string name="last30days">Últimos 30 días: </string>
+    
+    <string name="pick_another_time">Escoge otra hora</string>
+    <string name="pick_another_time_text">Debes vivir el día para clasificarlo, por lo tanto elige entre las MIN_ANSWERABLE_HOUR:00 y 23:59 hrs</string>
+    
+    <string name="confirm_shitday">Confirma</string>
+    <string name="confirm_shitday_text">Confirma que fue un día de mierda</string>
+    
+    <string name="confirm_not_shitday">Confirma</string>
+    <string name="confirm_not_shitday_text">Confirma que no fue un día de mierda</string>
+    
+    <string name="previous_month">Anterior</string>
+    <string name="next_month">Siguiente</string>
+    
+    <string name="month_prompt">Elige un mes</string>
+    
+    <string name="apply_filters">OK</string>
+    
+	<string-array name="months_array">
+		<item>Enero</item>
+		<item>Febrero</item>
+		<item>Marzo</item>
+		<item>Abril</item>
+		<item>Mayo</item>
+		<item>Junio</item>
+		<item>Julio</item>
+		<item>Agosto</item>
+		<item>Septiembre</item>
+		<item>Octubre</item>
+		<item>Noviembre</item>
+		<item>Diciembre</item>
+	</string-array>
+	
+	<string name="about_memo">\"Shitday\" para Android\npor Germán Vicencio L.\nwww.manger.cl\n\nLogo por Juan Manuel Arzola\nwww.juanma.cl\n\nHaz un seguimiento de cuán mierda es tu vida, respondiendo una pregunta simple todas las noches: ¿Fue un día de mierda hoy?.</string>
+	
+	<string name="save_day">Guardar</string>
+	<string name="cancel_day_update">Cancelar</string>
+	
+	<string name="cant_edit_future">¡No puedes saber a priori si este será un día de mierda o no!</string>
+
+</resources>

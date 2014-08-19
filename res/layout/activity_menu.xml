@@ -1,0 +1,96 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="cl.manger.android.shitday.activities.MenuActivity" >
+    
+    <TextView
+        android:id="@+id/textView_quickStatsText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/quick_stats_text" />
+    
+		<TableLayout
+    		android:id="@+id/quickstats_table"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+	        
+		<TableRow
+            android:id="@+id/quickstats_tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+		    <TextView
+		        android:id="@+id/textView_last7days"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginBottom="20dp"
+		        android:text="@string/last7days" />
+		    
+		    <TextView
+		        android:id="@+id/textView_last7daysValue"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginBottom="20dp"
+		        android:layout_marginLeft="20dp"
+		        android:layout_gravity="right"  />
+		</TableRow>
+		
+		<TableRow
+            android:id="@+id/quickstats_tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+	    
+		    <TextView
+		        android:id="@+id/textView_last30days"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginBottom="20dp"
+		        android:text="@string/last30days" />
+		    
+		    <TextView
+		        android:id="@+id/textView_last30daysValue"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginBottom="20dp"
+		        android:layout_marginLeft="20dp"
+		        android:layout_gravity="right"
+		        android:text="" />
+		    
+	    </TableRow>
+	</TableLayout>
+
+    
+	<!-- 
+	<android.support.v7.widget.GridLayout 
+	    xmlns:grid="http://schemas.android.com/apk/res-auto"
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/gridLayout_horizontalCalendar"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" >
+	    
+	</android.support.v7.widget.GridLayout>-->
+
+	<Button android:id="@+id/button_goToList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/go_to_list_button" />
+	
+	<Button android:id="@+id/button_goToSettings"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/go_to_settings_button" />
+	
+	<Button android:id="@+id/button_goToAbout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/go_to_about_button" />
+	
+</LinearLayout>
