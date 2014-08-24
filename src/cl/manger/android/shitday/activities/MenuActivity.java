@@ -11,6 +11,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager.NameNotFoundException;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
@@ -42,6 +44,8 @@ public class MenuActivity extends Activity
 	protected void onResume() 
 	{
 		super.onResume();
+		
+		// Maybe the user modified some days, so onResume we update
 		displayQuickStats();
 	};
 		
@@ -105,11 +109,23 @@ public class MenuActivity extends Activity
         
     	displayQuickStats();
         
-        
-        // Check (async) if alarm is set
-        /*
+        // Check if alarm is set (TODO: do this async)
         new AsyncTask<Void, Void, Void>()
-        {       	
+        {
+            private int getAppVersion()
+            {
+                try 
+                {
+                    PackageInfo packageInfo = thisActivityContext.getPackageManager().getPackageInfo(thisActivityContext.getPackageName(), 0);
+                    return packageInfo.versionCode;    
+                } 
+                catch (NameNotFoundException e) 
+                {
+                    // Should never happen
+                    throw new RuntimeException("Could not get package name: " + e);
+                }
+            }
+            
         	@Override
         	protected void onPreExecute()
         	{
@@ -122,12 +138,22 @@ public class MenuActivity extends Activity
                 Editor editSharedPreferences = sharedPreferences.edit();
                 
                 int askTimeHour = sharedPreferences.getInt(SharedPreferencesKeys.ASK_TIME_HOUR, -1);
+                int appVersion = sharedPreferences.getInt(SharedPreferencesKeys.APP_VERSION, -1);
+                
+                // Check if appVersion in sharedPreferences is different from this app running
+        		if (appVersion != getAppVersion())
+        		{       	
+                	// Update sharedPreferences
+        			editSharedPreferences.putInt(SharedPreferencesKeys.APP_VERSION, getAppVersion());
+        			editSharedPreferences.commit();
+        		}
                 
         		// Check if askTimeHour hasn't been defined
         		if (askTimeHour == -1)
         		{
         		    editSharedPreferences.putInt(SharedPreferencesKeys.ASK_TIME_HOUR, 20);
         		    editSharedPreferences.putInt(SharedPreferencesKeys.ASK_TIME_MINUTE, 0);
+        		    
         		    editSharedPreferences.commit();
         		    
         		    Intent intent = new Intent(thisActivityContext, SettingsActivity.class);
@@ -144,7 +170,6 @@ public class MenuActivity extends Activity
 			}
 			
         }.execute(null, null, null);
-        */
     }
     
     private void displayQuickStats()
