@@ -1,4 +1,4 @@
-shitday
+Good day
 =======
 
-Shitday for Android lets you track how shitty is your life, by answering a short question, "Was this a shitty day?" every night.
+Goodday for Android lets you track how good is your life, by answering a short question, "Was this a Good day?" every night.
